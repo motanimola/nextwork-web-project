@@ -1,0 +1,35 @@
+<settings>
+
+<servers>
+  <server>
+    <id>motan-nextwork-motan-nextwork-web-project</id>
+    <username>aws</username>
+    <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+  </server>
+</servers>
+
+<profiles>
+  <profile>
+    <id>motan-nextwork-motan-nextwork-web-project</id>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
+    <repositories>
+      <repository>
+        <id>motan-nextwork-motan-nextwork-web-project</id>
+        <url>https://motan-nextwork-468073541948.d.codeartifact.us-east-1.amazonaws.com/maven/motan-nextwork-web-project/</url>
+      </repository>
+    </repositories>
+  </profile>
+</profiles>
+
+<mirrors>
+  <mirror>
+    <id>motan-nextwork-motan-nextwork-web-project</id>
+    <name>motan-nextwork-motan-nextwork-web-project</name>
+    <url>https://motan-nextwork-468073541948.d.codeartifact.us-east-1.amazonaws.com/maven/motan-nextwork-web-project/</url>
+    <mirrorOf>*</mirrorOf>
+  </mirror>
+</mirrors>
+
+</settings>
